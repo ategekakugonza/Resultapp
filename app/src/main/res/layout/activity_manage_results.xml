@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".ManageResultsActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Edit/Delete Results"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/txt"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/sname"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Student Name"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/regno"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Enter Student Index No"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/eng"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Score In English"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/mtc"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Score In Maths"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/scie"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Score In Science"
+                android:layout_height="wrap_content"/>'
+            <EditText
+                android:id="@+id/sst"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Score In SST"
+                android:layout_height="wrap_content"/>
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Update Results" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Delete Record" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

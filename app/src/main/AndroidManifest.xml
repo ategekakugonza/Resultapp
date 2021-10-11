@@ -2,16 +2,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.resultapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:allowClearUserData="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Resultapp">
+        android:theme="@style/Theme.Resultapp"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ManageResultsActivity"
+            android:label="Manage Results"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".ViewStudentActivity"
+            android:exported="true"
+            android:label="Student List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMarksActivity"
+            android:exported="true"
+            android:label="Add Marks" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="true"
+            android:label="User Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="OneTime Login"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:text="Welcome Usernam here"
+                android:id="@+id/welcome_msg"
+                android:layout_height="wrap_content"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_border_shape"
+                    android:clickable="true"
+                    android:elevation="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="openStudentList"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/friendsCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24"
+                            app:tint="@color/teal_200" />
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:text="View Student Marks"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_border_shape"
+                    android:clickable="true"
+                    android:elevation="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="add_new_results"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_person_add_alt_1_24"
+                            app:tint="@color/purple_500" />
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:text="Add Student Marks"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

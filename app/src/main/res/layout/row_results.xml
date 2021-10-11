@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:padding="5dp"
+        android:id="@+id/car_here"
+        android:layout_margin="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/index"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_weight="4"
+                    android:gravity="start|center"
+                    android:text="Index No."
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_celebration_24"
+                    android:id="@+id/doctorImage"
+                    app:tint="@color/purple_500" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="Student Name" />
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="Name" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="MTC Score" />
+                        <TextView
+                            android:id="@+id/mtc"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="SST Score" />
+                        <TextView
+                            android:id="@+id/sst"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="ENG Score" />
+                        <TextView
+                            android:id="@+id/eng"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="SCIE Score" />
+                        <TextView
+                            android:id="@+id/scie"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            android:text="Total Score" />
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="start|center"
+                            android:text="00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_weight="1.5"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            />
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:maxLength="140"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textAlignment="textEnd"
+                            android:text="2007-01-23" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="Comment"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
