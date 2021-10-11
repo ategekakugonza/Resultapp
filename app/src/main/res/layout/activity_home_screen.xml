@@ -15,13 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_margin="10dp"
-                android:textSize="15sp"
-                android:text="Welcome Usernam here"
                 android:id="@+id/welcome_msg"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Welcome Usernam here"
+                android:textSize="15sp" />
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -143,7 +144,16 @@
 
             </GridLayout>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Logout"
+                android:onClick="logout"
+                android:layout_height="wrap_content"/>
+
         </LinearLayout>
+
+
 
 
     </ScrollView>
